@@ -1,1 +1,58 @@
-main css page
+/* Styles for WATS 3020 Final Project - Baby Pool */
+
+button {
+    background: #751aff;
+    padding: 0.2rem;
+    border: 2px rgba(255,255,255,0) solid;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover, button:focus {
+    background: #fff;
+    padding: 0.2rem;
+    border: 1px royalblue solid;
+    color: royalblue;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+}
+
+caption {
+    text-align: left;
+    background: #e8e8e8;
+    padding: 0.3rem;
+    visibility: hidden;
+    height: 0px;
+}
+
+td, th {
+    padding: 0.2rem;
+}
+tr:nth-childe(even) {
+    background: #ffccff;
+}
+tr:nth-child(2n+1) {
+    background: #ffe6ff;
+}
+thead tr th {
+    background: #ff80ff;
+}
+
+
+body {
+    background: #fff;
+    border-right: solid 1px #999;
+    border-left: solid 1px #999;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    width: 90%;
+    font-family:  Helvetica, Arial, sans-serif;
+}
+
+html {
+    background: #660066;
+    padding: 0;
+}
