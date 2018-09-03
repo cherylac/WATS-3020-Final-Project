@@ -79,4 +79,4 @@ showBirthdateButton.addEventListener('click', function (event){
     showBirthdateButton.innerHTML = "08/27/2018";
 });
 
-//TODO: write check winner function that shows whether a contestant is a winner//
+//TODO: make a function to show winner or not winner for each contestant//
