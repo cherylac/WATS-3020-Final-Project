@@ -51,10 +51,10 @@ class Contest {
     }
 
 addContestant(){
-    let name = prompt('Please enter your name', 'Jane Doe');
-    let email = prompt('Please enter your email address', 'me@email.com');
-    let birthdate = prompt('What day will the baby be born? (enter as MM/DD/YYYY', '08/31/2018');
-    let babyname = prompt('What will the baby\'\s name be?', 'Maria');
+    let name = prompt('Please enter your name');
+    let email = prompt('Please enter your email address');
+    let birthdate = prompt('What day will the baby be born? (enter as MM/DD/YYYY');
+    let babyname = prompt('What will the baby\'\s name be?');
     let newContestant = new Contestant(name, email, birthdate, babyname);
     this.contestants.push(newContestant);
     this.updateRoster();
@@ -72,11 +72,11 @@ addContestantButton.addEventListener('click', function(e){
     myContest.addContestant();
 })
 
-//TODO: Make "check winner" button and program it to say whether anyone won.//
-
 let showBirthdateButton = document.querySelector('#show-birthdate');
 showBirthdateButton.addEventListener('click', function (event){
     prompt('Are you done guessing?');
     console.log('Calling show birthdate');
     showBirthdateButton.innerHTML = "08/27/2018";
 });
+
+//TODO: write check winner function that shows whether a contestant is a winner//
