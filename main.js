@@ -5,6 +5,7 @@ class Person {
     constructor(name, email) {
         this.name = name;
         this.email = email;
+        this.username = email.split('@')[0];
     }
 }
 
@@ -58,7 +59,6 @@ addContestant(){
     this.contestants.push(newContestant);
     this.updateRoster();
    }
-
 }
 
 let rosterTbody = document.querySelector('#roster tbody');
@@ -71,3 +71,12 @@ addContestantButton.addEventListener('click', function(e){
     console.log('Calling addContestant() method.');
     myContest.addContestant();
 })
+
+//TODO: Make "check winner" button and program it to say whether anyone won.//
+
+let showBirthdateButton = document.querySelector('#show-birthdate');
+showBirthdateButton.addEventListener('click', function (event){
+    prompt('Are you done guessing?');
+    console.log('Calling show birthdate');
+    showBirthdateButton.innerHTML = "08/27/2018";
+});
