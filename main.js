@@ -45,6 +45,7 @@ class Contest {
             let babynameTD = document.createElement('td');
             babynameTD.innerHTML = contestant.babyname; 
             newTR.appendChild(babynameTD);
+        
             
             rosterTbody.appendChild(newTR);           
         }
@@ -71,6 +72,39 @@ addContestantButton.addEventListener('click', function(e){
     console.log('Calling addContestant() method.');
     myContest.addContestant();
 })
+
+//function showWinner () {
+//    let winningDate = "8/27/2018";
+//    if ((contestant.birthdate = winningDate)); {
+//    document.getElementByID("showwinner").innerHTML = "winner!";
+//    console.log('We have a winner.');
+//    }  
+    //updateRoster(this);
+//}
+//markWinner(username, status ='') {
+//    let contestant = this.contestant(username);
+//    let winningDate = '8/27/2018';
+//    if (contestant.birthdate === winningDate)
+//    let status = winner!;
+//    if (status === 'winner') {
+//        contestant.win.innerHTML = "You win!";
+//        else { contestant.win.innerHTML = "You did not win";    
+//        }
+//    } updateRoster(this);
+//}
+
+//findContestant(username){
+//    let foundContestant = this.contestants.find(function(contestant, index) {
+//        return contestant.username == username;
+//    });
+//    return foundContestant;
+//}
+//showBirthdateButton.addEventListener("click", showWinner)
+//function showWinner (){
+//    birthdate = document.getElementById("birthdate").value;
+//if ((birthdate = '08/27/2018')){
+//    birthdateTD.innerHTML = "You win!";
+//}   else birthdateTD.innerHTML = "you did not win"
 
 let showBirthdateButton = document.querySelector('#show-birthdate');
 showBirthdateButton.addEventListener('click', function (event){
